@@ -1,10 +1,10 @@
-package CallerTrue.services;
+package CallerTrue.data.repository;
 
 import CallerTrue.data.models.Contacts;
 
 import java.util.List;
 
-public interface ContactRep {
+public interface ContactRepository {
     Contacts save (Contacts contact);
      Contacts delete (Contacts contact);
      void deleteById(int id);

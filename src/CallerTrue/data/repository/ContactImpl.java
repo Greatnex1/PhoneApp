@@ -1,11 +1,11 @@
-package CallerTrue.services;
+package CallerTrue.data.repository;
 
 import CallerTrue.data.models.Contacts;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class NewContactRep implements ContactRep {
+public class ContactImpl implements ContactRepository {
     private int count;
     private int size;
     List<Contacts> saves = new ArrayList<>();
@@ -13,13 +13,23 @@ public class NewContactRep implements ContactRep {
     //   Contacts contacts;
     @Override
     public Contacts save(Contacts contact) {
-//        count++;
-        contact.setId(count);
-        saves.add(contact);
-//if(saves.add(contact ) == findById(id))
-//
-        return contact;
-  }
+        var contactToUpdate = findById(contact.getId());
+        if (contactToUpdate== null) {
+            count++;
+            contact.setId(count);
+            saves.add(contact);
+
+        } else {
+           contactToUpdate.setFirstName(contact.getFirstName()  );
+            contactToUpdate.setLastName(contact.getLastName());
+            contactToUpdate.setEmail(contact.getEmail());
+            contactToUpdate.setPhoneNumber(contact.getPhoneNumber());
+
+        }
+        return contact ;
+    }
+
+
 
     @Override
     public Contacts delete(Contacts contact) {
@@ -55,20 +65,20 @@ return contact;
 
     @Override
     public List<Contacts> findByFirstName(String firstName) {
-//        for (var contact: saves) {
-//            if(contact.getFirstName();
-               return saves;
+count++;
+          return   saves;
+           }
 
-            }
 
     @Override
     public List<Contacts> findByLastName(String lastName) {
-        return null;
+
+        return saves;
     }
 
     @Override
     public List<Contacts> findAll() {
-        return null;
+        return saves;
     }
 
     @Override

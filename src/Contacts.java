@@ -1,23 +1,10 @@
-package CallerTrue.data.models;
-
 public class Contacts {
-    private int id;
-
-
     private  String firstName;
     private String lastName;
     private String email;
     private String address;
     private String phoneNumber;
 
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
     public String getFirstName() {
         return firstName;
     }
@@ -61,8 +48,7 @@ public class Contacts {
     @Override
     public String toString() {
         return "Contacts{" +
-                "id=" + id +
-                ", firstName='" + firstName + '\'' +
+                "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 ", address='" + address + '\'' +

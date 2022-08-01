@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1a305571-596f-44b3-a42e-50bf4751a986" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CallerTrue/Exceptions/UserAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CallerTrue/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CallerTrue/Utils/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CallerTrue/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CallerTrue/data/repository/UserRep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CallerTrue/data/repository/UserRepImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CallerTrue/dto/request/ContactRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CallerTrue/dto/request/RegisterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CallerTrue/dto/response/ContactResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CallerTrue/dto/response/RegisterResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CallerTrue/services/ContactService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CallerTrue/services/ContactServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CallerTrue/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CallerTrue/services/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Contacts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Phonebook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/CallerTrue/services/ContactServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/CallerTrue/services/UserSerivceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/ContactsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/PhonebookTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CallerTrue/data/models/Contacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/data/models/Contacts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CallerTrue/data/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/data/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CallerTrue/services/ContactRep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/data/repository/ContactRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CallerTrue/services/NewContactRep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/data/repository/ContactImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CallerTrue/services/NewUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CallerTrue/services/UserRep.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/CallerTrue/services/NewContactRepTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CallerTrue/services/NewContactRepTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/CallerTrue/services/NewUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CallerTrue/services/NewUserTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2BxTJkYtEHICefJ0AmnHZ90GZ6O" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/home/nouah/IdeaProjects/PhoneApp/tests/CallerTrue&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;cc9c04cb54b41a79bb36292aa397622f&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="CallerTrue.services" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="CallerTrue" />
+      <recent name="CallerTrue.services" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="CallerTrue.Utils" />
+      <recent name="CallerTrue.services" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.UserServiceTest.registerTest">
+    <configuration name="CallerTrue.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CallerTrue.Main" />
+      <module name="PhoneApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CallerTrue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactServiceTest.addNewContact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PhoneApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CallerTrue.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CallerTrue.services" />
+      <option name="MAIN_CLASS_NAME" value="CallerTrue.services.ContactServiceTest" />
+      <option name="METHOD_NAME" value="addNewContact" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.addContactTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PhoneApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CallerTrue.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CallerTrue.services" />
+      <option name="MAIN_CLASS_NAME" value="CallerTrue.services.UserServiceTest" />
+      <option name="METHOD_NAME" value="addContactTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.registerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PhoneApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CallerTrue.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CallerTrue.services" />
+      <option name="MAIN_CLASS_NAME" value="CallerTrue.services.UserServiceTest" />
+      <option name="METHOD_NAME" value="registerTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.testDuplicateEmailThrowExceptionIfEmailAlreadyExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PhoneApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CallerTrue.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CallerTrue.services" />
+      <option name="MAIN_CLASS_NAME" value="CallerTrue.services.UserServiceTest" />
+      <option name="METHOD_NAME" value="testDuplicateEmailThrowExceptionIfEmailAlreadyExists" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserServiceTest.registerTest" />
+        <item itemvalue="JUnit.UserServiceTest.testDuplicateEmailThrowExceptionIfEmailAlreadyExists" />
+        <item itemvalue="JUnit.ContactServiceTest.addNewContact" />
+        <item itemvalue="JUnit.UserServiceTest.addContactTest" />
+        <item itemvalue="Application.CallerTrue.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1a305571-596f-44b3-a42e-50bf4751a986" name="Changes" comment="" />
+      <created>1657846669707</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657846669707</updated>
+      <workItem from="1657846671067" duration="6486000" />
+      <workItem from="1657857986789" duration="69000" />
+      <workItem from="1657858142468" duration="3186000" />
+      <workItem from="1657970971593" duration="5766000" />
+      <workItem from="1658146928960" duration="32301000" />
+      <workItem from="1658264969695" duration="739000" />
+      <workItem from="1658304928632" duration="626000" />
+      <workItem from="1658323938512" duration="23009000" />
+      <workItem from="1658388742062" duration="3332000" />
+      <workItem from="1658401826621" duration="4479000" />
+      <workItem from="1658454446590" duration="20000" />
+      <workItem from="1658460823936" duration="274000" />
+      <workItem from="1658689118380" duration="5017000" />
+      <workItem from="1658773439705" duration="4271000" />
+      <workItem from="1658906015986" duration="4122000" />
+      <workItem from="1658915349290" duration="7486000" />
+      <workItem from="1658926407248" duration="5617000" />
+      <workItem from="1658933354648" duration="8486000" />
+      <workItem from="1658979586382" duration="291000" />
+      <workItem from="1658995489283" duration="6032000" />
+      <workItem from="1659015222772" duration="329000" />
+      <workItem from="1659015857239" duration="519000" />
+      <workItem from="1659016498016" duration="2906000" />
+      <workItem from="1659019489763" duration="1442000" />
+      <workItem from="1659021381348" duration="8064000" />
+      <workItem from="1659082763432" duration="6596000" />
+      <workItem from="1659095247861" duration="4521000" />
+      <workItem from="1659119522349" duration="328000" />
+      <workItem from="1659152217952" duration="190000" />
+      <workItem from="1659291563408" duration="1548000" />
+    </task>
+    <task id="LOCAL-00001" summary="phonebook">
+      <created>1658247945571</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658247945571</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="phonebook" />
+    <option name="LAST_COMMIT_MESSAGE" value="phonebook" />
+  </component>
+</project>

@@ -1,31 +1,17 @@
 package CallerTrue.data.models;
 
+import lombok.Data;
+
+import java.util.List;
+@Data
 public class User {
     private String firstName;
     private String password;
     private String email;
 
-    public String getFirstName() {
-        return firstName;
-    }
+    private String username;
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+    List<Contacts> contacts;
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 }
+

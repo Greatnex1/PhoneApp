@@ -1,6 +1,8 @@
 package CallerTrue.services;
 
 import CallerTrue.data.models.Contacts;
+import CallerTrue.data.repository.ContactRepository;
+import CallerTrue.data.repository.ContactImpl;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -9,7 +11,7 @@ class NewContactRepTest {
     @Test
 
     public void testContactsCAnBeSaved() {
-        ContactRep contactRep = new NewContactRep();
+        ContactRepository contactRep = new ContactImpl();
         Contacts contact = new Contacts();
         contact.setFirstName("George");
         contact.setLastName("Max");
@@ -23,7 +25,7 @@ class NewContactRepTest {
 
     @Test
     void testContactCanBeSearchedForById() {
-        ContactRep contactRep = new NewContactRep();
+        ContactRepository contactRep = new ContactImpl();
         Contacts contact = new Contacts();
         contact.setFirstName("George");
         contact.setLastName("Max");
@@ -40,7 +42,7 @@ class NewContactRepTest {
 
     @Test
     void testContactCanBeDeleted() {
-        ContactRep contactRep = new NewContactRep();
+        ContactRepository contactRep = new ContactImpl();
         Contacts contact = new Contacts();
         contact.setFirstName("George");
         contact.setLastName("Max");
@@ -48,7 +50,7 @@ class NewContactRepTest {
         contact.setEmail("georgemax@gmail.com");
         contact.setAddress("Willie wells Street");
         contactRep.save(contact);
-        ContactRep contactRep1 = new NewContactRep();
+        ContactRepository contactRep1 = new ContactImpl();
         Contacts contact1 = new Contacts();
         contact1.setFirstName("George");
         contact1.setLastName("Max");
@@ -64,7 +66,7 @@ class NewContactRepTest {
 
     @Test
     void testContactCAnBeRemovedById() {
-        ContactRep contactRep = new NewContactRep();
+        ContactRepository contactRep = new ContactImpl();
         Contacts contact = new Contacts();
         contact.setFirstName("George");
         contact.setLastName("Max");
@@ -87,13 +89,43 @@ class NewContactRepTest {
 }
 
  */
-        ContactRep contactRep = new NewContactRep();
+        ContactRepository contactRep = new ContactImpl();
         Contacts contact = new Contacts();
         contact.setFirstName("George");
         contact.setLastName("Max");
+        contactRep.save(contact);
+        assertEquals(1, contactRep.count());
+        contact.setFirstName("Emma");
+        contact.setLastName("Max");
+        contactRep.save(contact);
+        assertEquals(1, contactRep.count());
+//        System.out.println(contactRep.findById(1).getFirstName()  + " , updated successfully!");
+        assertEquals("Emma", contactRep.findById(1).getFirstName());
+    }
+
+    @Test
+    void testSearchContactsByFirstName() {
+        ContactRepository contactRep = new ContactImpl();
+        Contacts contact = new Contacts();
         contact.setFirstName("George");
         contact.setLastName("Max");
+        contactRep.save(contact);
+        ContactRepository contactRep1 = new ContactImpl();
+        Contacts contact1 = new Contacts();
+        contact1.setFirstName("George");
+        contactRep1.findByFirstName("George");
 
+        assertEquals("George", contact1.getFirstName());
+    }
+
+    @Test
+    void testSearchContactsByLastName() {
+        ContactRepository contactRep = new ContactImpl();
+        Contacts contact = new Contacts();
+        contact.setLastName("Wells");
+        contactRep.save(contact);
+        contactRep.findByLastName("Wells");
+        assertEquals("Wells", contact.getLastName());
 
     }
 }
