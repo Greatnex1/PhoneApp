@@ -1,17 +1,10 @@
 package CallerTrue.data.repository;
 
 import CallerTrue.data.models.User;
+import org.springframework.data.mongodb.repository.MongoRepository;
 
-import java.util.List;
+public interface UserRep extends MongoRepository <User, String> {
 
-public interface UserRep {
-  User save(User user);
- User delete(User user);
+    User findUserByEmail(String email);
 
-User  findByEmail(String user);
-void   deleteByEmail (String email);
-List <User>  findByFirstName(String firstName);
-List <User> viewAlL();
-
-    int counter();
 }

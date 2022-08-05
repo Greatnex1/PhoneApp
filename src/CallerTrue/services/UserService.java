@@ -1,8 +1,8 @@
 package CallerTrue.services;
 
-import CallerTrue.data.models.Contacts;
 import CallerTrue.dto.request.ContactRequest;
 import CallerTrue.dto.request.RegisterRequest;
+import CallerTrue.dto.response.AllContactResponse;
 import CallerTrue.dto.response.ContactResponse;
 import CallerTrue.dto.response.RegisterResponse;
 
@@ -15,5 +15,5 @@ public interface UserService {
 
     int getNumberOfUsers();
 
-    List<Contacts> findContactsBelongingTo(String user);
+    List<AllContactResponse> findContactsBelongingTo(String user);
 }

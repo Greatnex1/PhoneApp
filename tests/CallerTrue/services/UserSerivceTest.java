@@ -28,6 +28,7 @@ class UserServiceTest {
         request.setFirstName("Test");
         request.setPassword("Test123");
         request.setUsername("testing224");
+        request.setUsername("Testing_me");
 
     }
 
@@ -48,13 +49,13 @@ class UserServiceTest {
     RegisterRequest request1  = new RegisterRequest();
     request1.setEmail("test@example.com");
     request1.setFirstName("Test");
-    userService.registerUser(request1);
+//    userService.registerUser(request1);
 //    assertThrows(UserAlreadyExistsException.class);
     assertEquals(1,userService.getNumberOfUsers());
 }
 @Test
     public void addContactTest(){
-    userService.registerUser(request);
+
 
 //    given that i have a user
 //    user adds contacts
@@ -62,15 +63,21 @@ class UserServiceTest {
 //    UserServiceImpl userService =new UserServiceImpl(userRepository,contactService);
 
 
-    addRequest.setUserName(request.getEmail());
+    addRequest.setUserName(request.getUsername());
     addRequest.setEmail("ayo2gmail.com");
     addRequest.setLastName("Aj");
     addRequest.setFirstName("NiIke");
     addRequest.setPhoneNumber("090876543");
+    userService.registerUser(request);
 
 //    userService.addContact(addRequest);
 
     assertEquals(1,userService.findContactsBelongingTo(request.getEmail()).size());
+
+}
+@Test
+    void findAllContactsTest(){
+    userService.registerUser(request);
 
 }
 }

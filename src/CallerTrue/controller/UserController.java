@@ -1,11 +1,17 @@
 package CallerTrue.controller;
 
+import CallerTrue.Exceptions.UserAlreadyExistsException;
 import CallerTrue.data.models.Contacts;
+import CallerTrue.data.models.User;
 import CallerTrue.dto.request.ContactRequest;
 import CallerTrue.dto.request.RegisterRequest;
+import CallerTrue.dto.response.AllContactResponse;
 import CallerTrue.dto.response.ContactResponse;
 import CallerTrue.dto.response.RegisterResponse;
 import CallerTrue.services.UserServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -19,12 +25,18 @@ import java.util.List;
 //Post, patch, put, get, delete five most used mapping
 @RestController
 public class UserController {
-    private UserServiceImpl userService = new UserServiceImpl();
+    @Autowired
+    private UserServiceImpl userService;
 
     @PostMapping("/user")
-    public RegisterResponse registerUser(@RequestBody RegisterRequest registerRequest) {
-        System.out.println("registering");
-        return userService.registerUser(registerRequest);
+    public ResponseEntity<?> registerUser(@RequestBody RegisterRequest registerRequest) {
+        try {
+            RegisterResponse serviceResponse = userService.registerUser(registerRequest);
+            return new ResponseEntity<>(serviceResponse, HttpStatus.CREATED);
+//        System.out.println("registering");
+        } catch (UserAlreadyExistsException err) {
+return  new ResponseEntity<>(err.getMessage(),HttpStatus.BAD_REQUEST);
+        }
     }
 
     @PatchMapping("/user")
@@ -33,7 +45,7 @@ public class UserController {
     }
 
     @GetMapping("/user/{email}")
-    public List<Contacts> findContactBelongingTo(@PathVariable String email) {
+    public List<AllContactResponse> findContactBelongingTo(@PathVariable String email) {
         System.out.println("fetching");
         return userService.findContactsBelongingTo(email);
     }
