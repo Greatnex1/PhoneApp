@@ -8,6 +8,7 @@ import CallerTrue.dto.request.RegisterRequest;
 import CallerTrue.dto.response.AllContactResponse;
 import CallerTrue.dto.response.ContactResponse;
 import CallerTrue.dto.response.RegisterResponse;
+import CallerTrue.services.UserService;
 import CallerTrue.services.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -26,7 +27,7 @@ import java.util.List;
 @RestController
 public class UserController {
     @Autowired
-    private UserServiceImpl userService;
+    private UserService userService = new UserServiceImpl();
 
     @PostMapping("/user")
     public ResponseEntity<?> registerUser(@RequestBody RegisterRequest registerRequest) {

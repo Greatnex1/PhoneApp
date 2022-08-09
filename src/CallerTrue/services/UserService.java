@@ -13,7 +13,6 @@ public interface UserService {
 
     ContactResponse addContact(ContactRequest request);
 
-    int getNumberOfUsers();
 
     List<AllContactResponse> findContactsBelongingTo(String user);
 }

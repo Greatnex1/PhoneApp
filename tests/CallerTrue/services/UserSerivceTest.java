@@ -19,7 +19,7 @@ class UserServiceTest {
    void up(){
         contactService = new ContactServiceImpl();
      userService = new UserServiceImpl();
-        userRep = new UserRepImpl();
+//        userRep = new UserRepImpl();
         addRequest= new ContactRequest();
 
 

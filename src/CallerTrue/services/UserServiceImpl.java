@@ -20,13 +20,17 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private  UserRep userRepository;
 
-    public UserServiceImpl(UserRep rep){
-        this.userRepository = rep;
-    }
+//    public UserServiceImpl(UserRep rep){
+//        this.userRepository = rep;
+//    }
 
 //    private RegisterResponse userResponse = new RegisterResponse();
 @Autowired
     private  ContactService contactService;
+
+//    public ContactServiceImpl(ContactService cons){
+//        this.contactService = cons;
+//    }
     @Override
     public RegisterResponse registerUser(RegisterRequest request) throws UserAlreadyExistsException {
         validate(request, userRepository);
@@ -35,7 +39,7 @@ public class UserServiceImpl implements UserService {
 //        userResponse.setMessage("Successful!");
         userRepository.save(user);
         RegisterResponse registerResponse = new RegisterResponse();
-        registerResponse.setMessage(String.format("%s contact added!", request.getEmail()));
+        registerResponse.setMessage(String.format("%s user added!", request.getEmail()));
         return registerResponse;
 //        return userResponse;
 
@@ -56,19 +60,18 @@ public class UserServiceImpl implements UserService {
         Contacts contact = new Contacts();
         Mapper.map(request,contact);
         Contacts savedContact = contactService.addNewContact(contact);
-        User user = userRepository.findUserByEmail(request.getUserName());
+        User user = userRepository.findUserByEmail(request.getUsername());
         user.getContacts().add(savedContact);
         ContactResponse response = new ContactResponse();
-        response.setMessage("");
-
+        response.setMessage("Contact saved!");
         userRepository.save(user);
         return null;
     }
 
-    @Override
-    public int getNumberOfUsers() {
-        return 0;
-    }
+//    @Override
+//    public int getNumberOfUsers() {
+//        return 0;
+//    }
 
 //    @Override
 //    public int getNumberOfUsers() {

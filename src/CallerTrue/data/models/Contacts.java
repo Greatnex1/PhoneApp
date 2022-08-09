@@ -12,7 +12,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @NoArgsConstructor
 public class Contacts {
     @Id
-    private int id;
+    private String id;
     @Getter
     @Setter
      private  String firstName;

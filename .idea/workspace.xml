@@ -6,43 +6,56 @@
   <component name="ChangeListManager">
     <list default="true" id="1a305571-596f-44b3-a42e-50bf4751a986" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CallerTrue/Exceptions/UserAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CallerTrue/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CallerTrue/Utils/Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CallerTrue/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CallerTrue/data/repository/UserRep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CallerTrue/data/repository/UserRepImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CallerTrue/dto/request/ContactRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CallerTrue/dto/request/RegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CallerTrue/dto/response/ContactResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CallerTrue/dto/response/RegisterResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CallerTrue/services/ContactService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CallerTrue/services/ContactServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CallerTrue/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CallerTrue/services/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Contacts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Phonebook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/CallerTrue/services/ContactServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/CallerTrue/services/UserSerivceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ContactsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/PhonebookTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_17_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_17_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_65.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_65.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_65.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_4_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_record_codec_4_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_4_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_sync_4_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_36.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_3_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_30.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhoneApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CallerTrue/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CallerTrue/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CallerTrue/data/models/Contacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/data/models/Contacts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CallerTrue/data/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/data/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CallerTrue/services/ContactRep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/data/repository/ContactRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CallerTrue/services/NewContactRep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/data/repository/ContactImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CallerTrue/services/NewUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CallerTrue/services/UserRep.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/CallerTrue/services/NewContactRepTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CallerTrue/services/NewContactRepTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/CallerTrue/services/NewUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CallerTrue/services/NewUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CallerTrue/dto/request/ContactRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/dto/request/ContactRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CallerTrue/services/ContactServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/services/ContactServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CallerTrue/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CallerTrue/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/services/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/CallerTrue/services/UserSerivceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CallerTrue/services/UserSerivceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +115,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;cc9c04cb54b41a79bb36292aa397622f&quot;
   }
 }</component>
@@ -122,7 +136,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest.registerTest">
+  <component name="RunManager" selected="Application.CallerTrue.Main">
     <configuration name="CallerTrue.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CallerTrue.Main" />
       <module name="PhoneApp" />
@@ -147,22 +161,6 @@
       <option name="PACKAGE_NAME" value="CallerTrue.services" />
       <option name="MAIN_CLASS_NAME" value="CallerTrue.services.ContactServiceTest" />
       <option name="METHOD_NAME" value="addNewContact" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.addContactTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PhoneApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CallerTrue.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CallerTrue.services" />
-      <option name="MAIN_CLASS_NAME" value="CallerTrue.services.UserServiceTest" />
-      <option name="METHOD_NAME" value="addContactTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -200,13 +198,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="PhoneApp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="CallerTrue.Main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CallerTrue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CallerTrue.Main" />
         <item itemvalue="JUnit.UserServiceTest.registerTest" />
+        <item itemvalue="Spring Boot.Main" />
         <item itemvalue="JUnit.UserServiceTest.testDuplicateEmailThrowExceptionIfEmailAlreadyExists" />
         <item itemvalue="JUnit.ContactServiceTest.addNewContact" />
-        <item itemvalue="JUnit.UserServiceTest.addContactTest" />
-        <item itemvalue="Application.CallerTrue.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -248,6 +259,26 @@
       <workItem from="1659119522349" duration="328000" />
       <workItem from="1659152217952" duration="190000" />
       <workItem from="1659291563408" duration="1548000" />
+      <workItem from="1659365103783" duration="258000" />
+      <workItem from="1659372082100" duration="535000" />
+      <workItem from="1659411876887" duration="3024000" />
+      <workItem from="1659455668144" duration="60000" />
+      <workItem from="1659512154261" duration="21909000" />
+      <workItem from="1659580138842" duration="1767000" />
+      <workItem from="1659604804279" duration="177000" />
+      <workItem from="1659605385183" duration="14024000" />
+      <workItem from="1659704942871" duration="123000" />
+      <workItem from="1659849690971" duration="54000" />
+      <workItem from="1659850834991" duration="20000" />
+      <workItem from="1659850993998" duration="41000" />
+      <workItem from="1659851219220" duration="43000" />
+      <workItem from="1659851338232" duration="39000" />
+      <workItem from="1659851512112" duration="13000" />
+      <workItem from="1659851585986" duration="64000" />
+      <workItem from="1659851721869" duration="42000" />
+      <workItem from="1659851926118" duration="12000" />
+      <workItem from="1659857168284" duration="10110000" />
+      <workItem from="1659971520917" duration="1592000" />
     </task>
     <task id="LOCAL-00001" summary="phonebook">
       <created>1658247945571</created>
@@ -256,7 +287,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658247945571</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="phonebook">
+      <created>1659365217685</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659365217685</updated>
+    </task>
+    <task id="LOCAL-00003" summary="phonebook">
+      <created>1659705041452</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659705041452</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -19,6 +19,7 @@ public class ContactServiceImpl implements ContactService {
         Contacts saveContacts = new Contacts();
         Mapper.map(contact,saveContacts);
         contactRepository.save(saveContacts);
+        contactResponse.setMessage("Contact added successfully!");
         var response = contactResponse.getMessage();
         return saveContacts;
          }

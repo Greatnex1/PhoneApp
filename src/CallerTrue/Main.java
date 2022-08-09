@@ -32,7 +32,6 @@ public class Main {
 
         switch (userInput.charAt(0)) {
             case '1' -> createAnAccount();
-
             case '2' -> AddContactToUser();
             case '3' -> findContactBelongingToUSer();
         }
@@ -45,7 +44,7 @@ public class Main {
         contactRequest.setFirstName(input("Enter contact firstName"));
         contactRequest.setLastName(input("Enter contact's lastName"));
         contactRequest.setEmail(input("Enter contact email:"));
-        contactRequest.setUserName(input("Enter your email"));
+        contactRequest.setUsername(input("Enter your email"));
         var contacts = userController.findContactBelongingTo(contactRequest.getEmail());
 
         for (var contact : contacts) {
@@ -65,7 +64,7 @@ public class Main {
         contactRequest.setLastName(input("Enter contact's lastName"));
         contactRequest.setEmail(input("Enter contact email:"));
         contactRequest.setPhoneNumber(input("Enter contact's phoneNumber"));
-        contactRequest.setUserName(input("Enter user's username"));
+        contactRequest.setUsername(input("Enter user's username"));
         userController.addContact(contactRequest);
         displayMainMenu();
         }
@@ -79,7 +78,7 @@ public class Main {
         userRequest.setLastName(input("Enter last name"));
         userRequest.setUsername(input("Enter username"));
         userRequest.setPassword(input("Enter password"));
-        userRequest.setPhoneNumber(input("Enter phonenumber"));
+        userRequest.setPhoneNumber(input("Enter phone number"));
         userRequest.setEmail(input("Enter your email"));
         userController.registerUser(userRequest);
         welcome();
