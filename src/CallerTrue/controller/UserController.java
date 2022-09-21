@@ -34,7 +34,7 @@ public class UserController {
         try {
             RegisterResponse serviceResponse = userService.registerUser(registerRequest);
             return new ResponseEntity<>(serviceResponse, HttpStatus.CREATED);
-//        System.out.println("registering");
+
         } catch (UserAlreadyExistsException err) {
 return  new ResponseEntity<>(err.getMessage(),HttpStatus.BAD_REQUEST);
         }

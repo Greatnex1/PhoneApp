@@ -1,11 +1,9 @@
-package CallerTrue.services;
+package services;
 
 
 import CallerTrue.data.models.Contacts;
-import CallerTrue.data.repository.ContactImpl;
 import CallerTrue.data.repository.ContactRepository;
 import CallerTrue.data.repository.UserRep;
-import CallerTrue.data.repository.UserRepImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -16,11 +14,11 @@ public class ContactServiceTest {
     ContactRepository contactRep;
     UserRep userRepository;
     @BeforeEach
-    void up(){
+  /*  void up(){
         contact  = new Contacts();
         contactRep = new ContactImpl();
     userRepository = new UserRepImpl();
-    }
+    }*/
     @Test
     void addNewContact(){
 

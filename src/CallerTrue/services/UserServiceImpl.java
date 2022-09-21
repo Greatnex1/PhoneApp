@@ -41,7 +41,6 @@ public class UserServiceImpl implements UserService {
         RegisterResponse registerResponse = new RegisterResponse();
         registerResponse.setMessage(String.format("%s user added!", request.getEmail()));
         return registerResponse;
-//        return userResponse;
 
     }
 
@@ -68,15 +67,6 @@ public class UserServiceImpl implements UserService {
         return null;
     }
 
-//    @Override
-//    public int getNumberOfUsers() {
-//        return 0;
-//    }
-
-//    @Override
-//    public int getNumberOfUsers() {
-//        return 0;
-//    }
 
 
     @Override

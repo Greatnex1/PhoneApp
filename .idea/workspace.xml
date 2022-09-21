@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a305571-596f-44b3-a42e-50bf4751a986" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="1a305571-596f-44b3-a42e-50bf4751a986" name="Changes" comment="phonebook">
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_11.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_11.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_3.xml" afterDir="false" />
@@ -46,16 +45,16 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_22.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_22.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_30.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhoneApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneApp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CallerTrue/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CallerTrue/Utils/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/Utils/Mapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CallerTrue/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CallerTrue/data/models/Contacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/data/models/Contacts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CallerTrue/data/repository/UserRep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/data/repository/UserRep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CallerTrue/dto/request/ContactRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/dto/request/ContactRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CallerTrue/services/ContactServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/services/ContactServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CallerTrue/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CallerTrue/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CallerTrue/services/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/CallerTrue/services/UserSerivceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CallerTrue/services/UserSerivceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/CallerTrue/services/ContactServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/services/ContactServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/CallerTrue/services/UserSerivceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/services/UserSerivceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +73,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -105,11 +107,15 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;/home/nouah/IdeaProjects/PhoneApp/tests/CallerTrue&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
@@ -136,64 +142,52 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CallerTrue.Main">
-    <configuration name="CallerTrue.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CallerTrue.Main" />
+  <component name="RunManager" selected="Spring Boot.Main">
+    <configuration name="ContactServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PhoneApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CallerTrue.*" />
+          <option name="PATTERN" value="services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="MAIN_CLASS_NAME" value="services.ContactServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactServiceTest.addNewContact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PhoneApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CallerTrue.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CallerTrue.services" />
-      <option name="MAIN_CLASS_NAME" value="CallerTrue.services.ContactServiceTest" />
-      <option name="METHOD_NAME" value="addNewContact" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ContactsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactsTest.testContactsCanBeCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PhoneApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ContactsTest" />
+      <option name="METHOD_NAME" value="testContactsCanBeCreated" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.registerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PhoneApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CallerTrue.services.*" />
+          <option name="PATTERN" value="services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="CallerTrue.services" />
-      <option name="MAIN_CLASS_NAME" value="CallerTrue.services.UserServiceTest" />
-      <option name="METHOD_NAME" value="registerTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.testDuplicateEmailThrowExceptionIfEmailAlreadyExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PhoneApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CallerTrue.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CallerTrue.services" />
-      <option name="MAIN_CLASS_NAME" value="CallerTrue.services.UserServiceTest" />
-      <option name="METHOD_NAME" value="testDuplicateEmailThrowExceptionIfEmailAlreadyExists" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="MAIN_CLASS_NAME" value="services.UserServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -213,11 +207,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CallerTrue.Main" />
-        <item itemvalue="JUnit.UserServiceTest.registerTest" />
         <item itemvalue="Spring Boot.Main" />
-        <item itemvalue="JUnit.UserServiceTest.testDuplicateEmailThrowExceptionIfEmailAlreadyExists" />
-        <item itemvalue="JUnit.ContactServiceTest.addNewContact" />
+        <item itemvalue="JUnit.UserServiceTest" />
+        <item itemvalue="JUnit.ContactServiceTest" />
+        <item itemvalue="JUnit.ContactsTest.testContactsCanBeCreated" />
+        <item itemvalue="JUnit.ContactsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -279,6 +273,33 @@
       <workItem from="1659851926118" duration="12000" />
       <workItem from="1659857168284" duration="10110000" />
       <workItem from="1659971520917" duration="1592000" />
+      <workItem from="1660146327420" duration="614000" />
+      <workItem from="1660473286232" duration="24000" />
+      <workItem from="1660473515060" duration="22000" />
+      <workItem from="1660473590945" duration="1308000" />
+      <workItem from="1660589370666" duration="620000" />
+      <workItem from="1660795540356" duration="883000" />
+      <workItem from="1661400273719" duration="518000" />
+      <workItem from="1661641545124" duration="63000" />
+      <workItem from="1661641826258" duration="575000" />
+      <workItem from="1661642793656" duration="30000" />
+      <workItem from="1661764874111" duration="1423000" />
+      <workItem from="1662097987302" duration="135000" />
+      <workItem from="1662135331602" duration="116000" />
+      <workItem from="1662622955078" duration="70000" />
+      <workItem from="1662625908193" duration="1139000" />
+      <workItem from="1662743397608" duration="599000" />
+      <workItem from="1662806611897" duration="40000" />
+      <workItem from="1662987768083" duration="434000" />
+      <workItem from="1663004357520" duration="56000" />
+      <workItem from="1663257540303" duration="2721000" />
+      <workItem from="1663306571547" duration="599000" />
+      <workItem from="1663468264567" duration="2249000" />
+      <workItem from="1663670255605" duration="333000" />
+      <workItem from="1663671753077" duration="12000" />
+      <workItem from="1663679973554" duration="760000" />
+      <workItem from="1663751567959" duration="1210000" />
+      <workItem from="1663778126706" duration="5886000" />
     </task>
     <task id="LOCAL-00001" summary="phonebook">
       <created>1658247945571</created>
@@ -310,5 +331,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="phonebook" />
     <option name="LAST_COMMIT_MESSAGE" value="phonebook" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
 </project>

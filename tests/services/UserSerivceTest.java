@@ -1,25 +1,36 @@
-package CallerTrue.services;
+package services;
 
-import CallerTrue.data.repository.UserRepImpl;
+
 import CallerTrue.data.repository.UserRep;
 import CallerTrue.dto.request.ContactRequest;
 import CallerTrue.dto.request.RegisterRequest;
+import CallerTrue.services.ContactService;
+import CallerTrue.services.ContactServiceImpl;
+import CallerTrue.services.UserService;
+import CallerTrue.services.UserServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class UserServiceTest {
+    @Autowired
      UserRep userRep;
-     ContactService contactService;
-     UserService userService;
+
+    @Autowired
+    ContactService contactService;
+
+    @Autowired
+    UserService userService;
+    @Autowired
      ContactRequest addRequest;
+    @Autowired
      RegisterRequest request;
     @BeforeEach
    void up(){
         contactService = new ContactServiceImpl();
      userService = new UserServiceImpl();
-//        userRep = new UserRepImpl();
         addRequest= new ContactRequest();
 
 
@@ -34,7 +45,7 @@ class UserServiceTest {
 
 
 
-@Test
+/*@Test
     void registerTest(){
 //    given there is a request
 //    when
@@ -53,6 +64,8 @@ class UserServiceTest {
 //    assertThrows(UserAlreadyExistsException.class);
     assertEquals(1,userService.getNumberOfUsers());
 }
+*/
+
 @Test
     public void addContactTest(){
 
@@ -63,7 +76,7 @@ class UserServiceTest {
 //    UserServiceImpl userService =new UserServiceImpl(userRepository,contactService);
 
 
-    addRequest.setUserName(request.getUsername());
+    addRequest.setUsername(request.getUsername());
     addRequest.setEmail("ayo2gmail.com");
     addRequest.setLastName("Aj");
     addRequest.setFirstName("NiIke");

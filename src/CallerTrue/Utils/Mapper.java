@@ -31,5 +31,6 @@ public class Mapper {
         singleResponse.setId(contact.getId()+ "");
         singleResponse.setFirstname(contact.getFirstName());
         singleResponse.setLastname(contact.getLastName());
+
     }
 }
